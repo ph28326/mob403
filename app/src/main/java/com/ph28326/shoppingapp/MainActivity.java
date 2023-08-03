@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
     Button btnChangeEmail, btnChangePassword, btnSendResetEmail,
             btnRemoveUser, changeEmail, changePassword,
-            sendEmail, remove, tvSignOut;
+            sendEmail, remove, tvSignOut, todoapp;
     EditText oldEmail, newEmail, password, newPassword;
     FirebaseAuth.AuthStateListener authListener;
     FirebaseAuth auth;
@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         sendEmail = (Button) findViewById(R.id.send);
         remove = (Button) findViewById(R.id.remove);
         tvSignOut = (Button) findViewById(R.id.sign_out);
+        todoapp = (Button) findViewById(R.id.todoapp);
         oldEmail = (EditText) findViewById(R.id.old_email);
         newEmail = (EditText) findViewById(R.id.new_email);
         password = (EditText) findViewById(R.id.password);
